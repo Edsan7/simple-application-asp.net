@@ -9,13 +9,13 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <!-- LIGAÇÃO DO ARQUIVO CSS -->
-    <link href="StyleSheet.css" rel="stylesheet" />
+    <link href="../StyleSheet.css" rel="stylesheet" />
     <!-- OPEN SANS -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <!-- LIGAÇÃO DOS ARQUIVOS DO SLIDE  -->
-    <link href="js/flexslider/flexslider.css" rel="stylesheet" />
-    <script src="js/flexslider/jquery-1.7.2.min.js"></script>
-    <script src="js/flexslider/jquery.flexslider.js"></script>
+    <link href="../js/flexslider/flexslider.css" rel="stylesheet" />
+    <script src="../js/flexslider/jquery-1.7.2.min.js"></script>
+    <script src="../js/flexslider/jquery.flexslider.js"></script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -24,7 +24,7 @@
             <div class="cabecalho">
                 <!-- LOGOMARCA -->
                 <div class="logomarca">
-                    <a href="/Default.aspx"><img src="Images/marca1.png" id="LogoMarca" runat="server" /></a>
+                    <a href="/Default.aspx"><img src="../Images/marca1.png" id="LogoMarca" runat="server" /></a>
                 </div>
                 <div class="usuario">
                     <asp:Label ID="NomeCompleto" runat="server" Font-Bold="true"></asp:Label>
@@ -34,8 +34,8 @@
                     <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink>
                     <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Pages/Sobre.aspx">Sobre</asp:HyperLink>
                     <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Pages/Contato.aspx">Contato</asp:HyperLink>
-                    <asp:HyperLink ID="ViewExceptions" runat="server" Visible="false" NavigateUrl="/Pages/Admin/ViewExceptions.aspx">Exceções</asp:HyperLink>
-                    <asp:HyperLink ID="InserirUsuarios" runat="server" Visible="false" NavigateUrl="Pages/Admin/InserirUsuarios.aspx">Inserir Usuários</asp:HyperLink>
+                    <asp:HyperLink ID="ViewExceptions" runat="server" Visible="false" NavigateUrl="~/Pages/Admin/ViewExceptions.aspx">Exceções</asp:HyperLink>
+                    <asp:HyperLink ID="InserirUsuarios" runat="server" Visible="false" NavigateUrl="~/Pages/Admin/InserirUsuarios.aspx">Inserir Usuários</asp:HyperLink>
                     <asp:HyperLink ID="Login" runat="server" NavigateUrl="~/Pages/Login.aspx">Login</asp:HyperLink>
                     <asp:HyperLink ID="Logout" runat="server" NavigateUrl="~/Pages/Logout.aspx">Logout</asp:HyperLink>
                 </div>
