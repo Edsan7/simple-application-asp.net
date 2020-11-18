@@ -16,7 +16,7 @@
                 <label>Login</label>
                 <asp:TextBox ID="Login" MaxLength="255" runat="server"></asp:TextBox>
                 <label>Senha</label>
-                <asp:TextBox ID="Senha" MaxLength="255" runat="server"></asp:TextBox>
+                <asp:TextBox ID="Senha" type="password" MaxLength="255" runat="server"></asp:TextBox>
                 <label>Anotações</label>
                 <asp:TextBox ID="Anotacoes" MaxLength="255" runat="server"></asp:TextBox>
                 <asp:Button ID="Salvar" OnClick="Salvar_Click" runat="server" Text="Enviar" />

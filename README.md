@@ -4,7 +4,9 @@ This a simple application in ASP.NET that provides the CRUD operations (Create, 
 
 ## Screenshot
 
-![Gif](gif/application.gif)
+![app-gif](gif/application.gif)
+
+![new-user-gif](gif/new-user.gif)
 
 ## License
 

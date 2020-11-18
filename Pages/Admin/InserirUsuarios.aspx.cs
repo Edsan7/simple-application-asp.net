@@ -44,7 +44,7 @@ namespace WebApplication2.Admin
                 {
                     Mensagem.Text = "Preencha o campo anotações";
                 }
-                else if(LoginExiste(Login.Text.Trim()) == true)
+                else if(LoginExiste(Login.Text.Trim()))
                 {
                     Mensagem.Text = "O login já existe, por favor escolha outro";
                 }
@@ -92,16 +92,16 @@ namespace WebApplication2.Admin
             {
                 if (tb.Rows[0]["Codigo"].ToString() == Codigo.Text)
                 {
-                    return false;
+                    return true;
                 }
                 else
                 {
-                    return true;
+                    return false;
                 }
             }
             else
             {
-                return true;
+                return false;
             }
         } 
         #endregion
