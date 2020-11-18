@@ -80,6 +80,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\AppDatabase.dll" />
+    <Content Include="bin\FirebirdSql.Data.FirebirdClient.dll" />
     <Content Include="js\flexslider\flexslider.css" />
     <Content Include="js\flexslider\fonts\flexslider-icon.svg" />
     <Content Include="js\flexslider\jquery-1.7.2.min.js" />
@@ -147,11 +149,11 @@
       <DependentUpon>Logout.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Site.Master.cs">
+    <Compile Include="Pages\Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Site.Master.designer.cs">
+    <Compile Include="Pages\Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
     <Compile Include="Pages\Sobre.aspx.cs">
@@ -166,8 +168,10 @@
     <Content Include="js\flexslider\fonts\flexslider-icon.eot" />
     <Content Include="js\flexslider\fonts\flexslider-icon.ttf" />
     <Content Include="js\flexslider\fonts\flexslider-icon.woff" />
+    <Content Include="LICENSE" />
     <None Include="packages.config" />
-    <Content Include="Site.Master" />
+    <Content Include="Pages\Site.Master" />
+    <Content Include="README.md" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -176,7 +180,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Code\" />
+    <Folder Include="bin\roslyn\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
